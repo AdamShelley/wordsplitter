@@ -1,19 +1,14 @@
 import React from "react";
 import TextWithInsertion from "./text-style";
 
-type Props = {
-  gameStarted: (value: boolean) => void;
-};
+type Props = {};
 
 const text = "kadjskhelloflakjdflkjefworldlajdflkejjflkejf";
 
-const GameBoard = ({ gameStarted }: Props) => {
+const GameBoard = (props: Props) => {
   return (
     <div className="mt-5">
-      <TextWithInsertion
-        text="aelaelfHellolaekfworldlksf"
-        gameStarted={gameStarted}
-      />
+      <TextWithInsertion text="aelaelfHellolaekfworldlksf" />
     </div>
   );
 };
