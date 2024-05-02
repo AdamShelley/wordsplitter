@@ -107,7 +107,7 @@ const TextWithInsertion: React.FC<TextWithInsertionProps> = ({ text }) => {
         isNew: true,
       }));
       setCharacters((oldCharacters) => [...oldCharacters, ...newCharacters]);
-    }, 2000);
+    }, 1000);
 
     return () => clearInterval(interval);
   }, [gameStarted]);

@@ -7,7 +7,7 @@ const text = "kadjskhelloflakjdflkjefworldlajdflkejjflkejf";
 
 const GameBoard = (props: Props) => {
   return (
-    <div className="mt-5">
+    <div className="">
       <TextWithInsertion text="aelaelfHellolaekfworldlksf" />
     </div>
   );

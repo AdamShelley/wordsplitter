@@ -3,8 +3,14 @@ import { Roboto, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
+import localFont from "next/font/local";
 
 const font = Roboto_Mono({ weight: ["400", "500", "700"], subsets: ["latin"] });
+
+const commitMono = localFont({
+  src: "../public/font.otf",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={font.className}>
+      <body className={commitMono.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
